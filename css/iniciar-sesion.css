@@ -1,0 +1,92 @@
+#fondobody {
+    width: 800px;
+}
+
+#contenedor {
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: rgba(85, 148, 150, 1);
+    border: 1px solid rgba(5, 68, 70, 1);
+    
+    display: flex;
+}
+
+form#iniciar_sesion {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 30px;
+}
+
+form#iniciar_sesion input[type=text],
+form#iniciar_sesion input[type=password],
+form#iniciar_sesion button {
+    display: block;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid rgba(5, 68, 70, 1);
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form#iniciar_sesion input[type=text]:hover,
+form#iniciar_sesion input[type=password]:hover,
+form#iniciar_sesion input[type=text]:focus, 
+form#iniciar_sesion input[type=password]:focus {
+    box-shadow: 0px 0px 0px 1px rgba(5, 68, 70, 1);
+}
+
+form#iniciar_sesion button {
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+    background: none;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+form#iniciar_sesion button:hover {
+    cursor: pointer;
+    background: rgba(55, 118, 120, 1);
+    box-shadow: 0px 0px 0px 1px rgba(5, 68, 70, 1);
+}
+
+form#iniciar_sesion #error {
+    display: block;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form#iniciar_sesion #registrado {
+    display: block;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* TXT CAMBIAR FORM */
+
+/* txt cambiar form */
+#txtCambiarForm {
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+/* txt cambiar form enlace */
+#txtCambiarForm a {
+    text-shadow: none;
+}
+
+/* 800px */
+@media only screen and (max-width: 800px) {
+    #fondobody {
+        width: 100%;
+    }
+    
+    #contenedor {
+        border-right: none;
+        border-left: none;
+    }
+}

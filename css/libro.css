@@ -1,0 +1,165 @@
+form#buscar_libro {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Input text */
+#buscar_libro input[type=text] {
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+    width: 70%;
+    box-sizing: border-box;
+    border: 1px solid rgba(5, 68, 70, 1);
+    background: rgba(85, 148, 150, 1);
+    outline: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Placeholder input text */
+#buscar_libro input[type=text]::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Hover input text */
+#buscar_libro input[type=text]:hover,
+#buscar_libro input[type=text]:focus {
+    background: rgba(55, 118, 120, 1);
+    box-shadow: 0px 0px 0px 1px rgba(5, 68, 70, 1);
+}
+
+/* Input submit */
+#buscar_libro input[type=submit] {
+    width: 14%;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid rgba(5, 68, 70, 1);
+    padding: 10px;
+    box-sizing: border-box;
+    
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+    background: rgba(85, 148, 150, 1);
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+/* Hover input submit */
+#buscar_libro input[type=submit]:hover {
+    cursor: pointer;
+    background: rgba(55, 118, 120, 1);
+    box-shadow: 0px 0px 0px 1px rgba(5, 68, 70, 1);
+}
+
+/* Select opcion busqueda */
+#buscar_libro select {
+    width: 14%;
+}
+
+/* Sugerencias libros */
+#sugerencias_libros {
+    width: 70%;
+    height: auto;
+    text-align: left;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sugerencia libro */
+.sugerencia_libro {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.1);
+    height: auto;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 0px;
+}
+
+/* Hover sugerencia libro */
+.sugerencia_libro:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* CONTENIDO */
+
+/* Contenedor */
+#contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Header libro */
+#header_libro {
+    box-sizing: border-box;
+}
+
+/* Header libro img */
+#header_libro #img_portada {
+    width: 300px;
+    margin-right: 50px;
+}
+
+/* Header libro sinopsis */
+#header_libro #sinopsis {
+    font-size: 25px;
+}
+
+/* Contenedor de las propiedades del libro */
+#propiedades_libro {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título libro */
+#propiedades_libro #titulo {
+    margin: 0px;
+    font-weight: bold;
+}
+
+/* Autor */
+#propiedades_libro #autor {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+/* Editorial, genero, número de copias */
+#propiedades_libro #editorial,
+#propiedades_libro #genero,
+#propiedades_libro #n_copias {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Txt error de prestamo */
+#error_prestamo {
+    display: block;
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Txt prestamo exitoso */
+#prestamo_exitoso {
+    display: block;
+    color: green;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1340px) {
+    #contenedor {
+        width: 95%;
+        margin: auto;
+    }
+}

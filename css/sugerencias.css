@@ -1,0 +1,182 @@
+/* SUGERENCIAS */
+
+/* Posición sugerencias */
+#sugerencias {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+/* Contenedor imágen sugerencias */
+#sugerencias #cont_img {
+    transition: box-shadow 0.3s ease;
+    float: right;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 40px;
+    padding: 10px;
+    background-color: rgba(95, 158, 160, 1);
+}
+
+/* Hover contenedor imágen sugerencias */
+#sugerencias #cont_img:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+    animation: moverY 0.3s ease 1;
+}
+
+/* Animación moverY */
+@keyframes moverY {
+    0% {transform: translateY(0px)}
+    50% {transform: translateY(-5px)}
+    100% {transform: translateY(0px)}
+}
+
+/* Imágen sugerencias */
+#sugerencias #cont_img img {
+    transition: filter 0.3s ease;
+    filter: invert(1);
+    width: 40px;
+}
+
+/* Hover contenedor imágen cambiar imágen */
+#sugerencias #cont_img:hover img {
+    filter: none;
+}
+
+/* Box sugerencias */
+#sugerencias #box_sugerencias {
+    width: 300px;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+/* Ocultar box sugerencias */
+#sugerencias .ocultar_box_sugerencias {
+    /* animation: aumentarOpacidad 0.3s ease 1 forwards; */
+}
+
+/* Mostrar box sugerencias */
+#sugerencias .mostrar_box_sugerencias {
+    /* animation: aumentarOpacidad 0.3s ease 1 forwards; */
+}
+
+/* Animación aumentar opacidad */
+@keyframes aumentarOpacidad {
+    from{
+        opacity: 0;
+        transform: translateX(0);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
+/* Animación disminuir opacidad */
+@keyframes disminuirOpacidad {
+    from{
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    
+    to{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+}
+
+/* Título sugerencias */
+#sugerencias h3 {
+    display: block;
+    margin: 0;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: cadetblue;
+}
+
+/* Contenido sugerencias */
+#sugerencias #box_sugerencias_contenido {
+    padding: 10px;
+}
+
+/* Quitar margen form */
+#sugerencias #box_sugerencias_contenido form {
+    margin: 0;
+}
+
+/* Tamaño fuente input text, textarea y input submit */
+#sugerencias #box_sugerencias_contenido input[type=text],
+#sugerencias #box_sugerencias_contenido textarea,
+#sugerencias #box_sugerencias_contenido input[type=submit] {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Input text sugerencias */
+#sugerencias #box_sugerencias_contenido input[type=text] {
+    transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    background: rgba(95, 158, 160, 0.05);
+    border: 1px solid rgba(95, 158, 160, 0.3);
+    outline: none;
+}
+
+/* Hover input text sugerencias */
+#sugerencias #box_sugerencias_contenido input[type=text]:hover,
+#sugerencias #box_sugerencias_contenido input[type=text]:focus {
+    background: rgba(95, 158, 160, 0.1);
+    border: 1px solid rgba(95, 158, 160, 0.5);
+}
+
+/* Textarea sugerencias */
+#sugerencias #box_sugerencias_contenido textarea {
+    transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+    display: block;
+    margin: auto;
+    font-family: sans-serif;
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 137.6px;
+    background: rgba(95, 158, 160, 0.05);
+    border: 1px solid rgba(95, 158, 160, 0.3);
+    outline: none;
+    resize: none;
+}
+
+/* Hover textarea sugerencias */
+#sugerencias #box_sugerencias_contenido textarea:hover,
+#sugerencias #box_sugerencias_contenido textarea:focus {
+    background: rgba(95, 158, 160, 0.1);
+    border: 1px solid rgba(95, 158, 160, 0.5);
+}
+
+/* Input submit sugerencias */
+#sugerencias #box_sugerencias_contenido input[type=submit] {
+    transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+    display: block;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.5);
+    background: rgba(95, 158, 160, 0.05);
+    border: 1px solid rgba(95, 158, 160, 0.3);
+}
+
+/* Hover input submit sugerencias */
+#sugerencias #box_sugerencias_contenido input[type=submit]:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+    background: rgba(95, 158, 160, 0.1);
+    border: 1px solid rgba(95, 158, 160, 0.5);
+}

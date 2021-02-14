@@ -1,0 +1,90 @@
+/* Contenedor agenda y notícias */
+#contenedor {
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Div agenda y notícias */
+#agenda, #noticias {
+    width: 38%;
+    height: auto;
+    border: 1px solid black;
+}
+
+/* <hr> de agenda y notícias */
+#agenda hr,
+#noticias hr {
+    margin: 0;
+}
+
+/* Títulos horarios y notícias */
+#agenda h2, #noticias h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+/* Texto horarios y notícias */
+#agenda p, #noticias p {
+    text-align: justify;
+    margin: 10px;
+}
+
+/* ASIDE paneles */
+aside {
+    width: 20%;
+    height: auto;
+    border: 1px solid black;
+}
+
+/* 768px */
+@media only screen and (max-width: 768px) {
+    /* Space-between */
+    #contenedor {
+        justify-content: space-between;
+    }
+    
+    /* Width total 94% */
+    #agenda, #noticias {
+        width: 47%;
+    }
+    
+    /* Agenda margin left 10px */
+    #agenda {
+        margin-left: 10px;
+    }
+    
+    /* Notícias margin right 10px */
+    #noticias {
+        margin-right: 10px;
+    }
+    
+    /* Width 100%, margin-left y right 10px */
+    aside {
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+        height: 100px;
+    }
+}
+
+/* 550px */
+@media only screen and (max-width: 550px) {
+    
+    /* Width 88%, margin-left y right 10px */
+    #agenda, #noticias {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Quitar margin-top de aside */
+    aside {
+        margin-top: 0px;
+    }
+}

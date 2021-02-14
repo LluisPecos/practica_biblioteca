@@ -1,0 +1,156 @@
+#fondobody {
+    width: 800px;
+}
+
+#contenedor {
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: rgba(85, 148, 150, 1);
+    border: 1px solid rgba(5, 68, 70, 1);
+    
+    display: flex;
+}
+
+form#registrar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 30px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Texto obligatorio */
+form#registrar #txtObligatorio {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* Placeholder obligatorio */
+form#registrar #obligatorio::placeholder {
+  color: red;
+  opacity: 0.7;
+}
+
+form#registrar input[type=text],
+form#registrar input[type=password],
+form#registrar input[type=submit],
+form#registrar input[type=number],
+form#registrar input[type=email] {
+    outline: none;
+    width: 49%;
+    font-size: 20px;
+    border: 1px solid rgba(5, 68, 70, 1);
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form#registrar input[type=text]:hover,
+form#registrar input[type=password]:hover,
+form#registrar input[type=number]:hover,
+form#registrar input[type=email]:hover,
+form#registrar input[type=number]:focus,
+form#registrar input[type=email]:focus,
+form#registrar input[type=text]:focus,
+form#registrar input[type=password]:focus {
+    box-shadow: 0px 0px 0px 1px rgba(5, 68, 70, 1);
+}
+
+form#registrar input[type=submit] {
+    width: 100%;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+    background: none;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+form#registrar input[type=submit]:hover {
+    cursor: pointer;
+    background: rgba(55, 118, 120, 1);
+    box-shadow: 0px 0px 0px 1px rgba(5, 68, 70, 1);
+}
+
+/* TXT CONTRASEÑA */
+
+/* div txt contraseña */
+#txtContraseña {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* hr txt contraseña */
+#txtContraseña hr {
+    margin: 0px 0px 20px 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: white;
+}
+
+/* span txt contraseña */
+#txtContraseña span {
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    font-weight: bold;
+}
+
+/* TXT MENSAJES REGISTRO */
+
+/* txt error registro */ 
+form#registrar #error {
+    display: block;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* txt registro exitoso */ 
+form#registrar #registrado {
+    display: block;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* TXT CAMBIAR FORM */
+
+/* txt cambiar form */
+#txtCambiarForm {
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+/* txt cambiar form enlace */
+#txtCambiarForm a {
+    text-shadow: none;
+}
+
+/* 800px */
+@media only screen and (max-width: 800px) {
+    #fondobody {
+        width: 100%;
+    }
+    
+    #contenedor {
+        border-right: none;
+        border-left: none;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    form#registrar input[type=text],
+    form#registrar input[type=password],
+    form#registrar input[type=number],
+    form#registrar input[type=email] {
+        width: 100%;
+    }
+}

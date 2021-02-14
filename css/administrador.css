@@ -1,0 +1,76 @@
+#fondobody {
+    width: 100%;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+table th,
+table td {
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* DIV */
+
+/* DIV buttons, buscar usuario, modificar fecha devolución, mostrar libro */
+#btns_cargar_tabla,
+#buscar_usuario,
+#modificar_fecha_devolucion,
+#mostrar_libro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#inputs {
+    margin-bottom: 30px;
+}
+
+/* HR */
+
+#insert_before_buscar_usuario,
+#insert_before_modificar_fecha_devolucion,
+#insert_before_mostrar_libro {
+    margin: 0px;
+}
+
+/* TXT */
+
+#txt_btns_cargar_tabla,
+#txt_buscar_usuario,
+#txt_datos_usuario,
+#txt_prestamos_usuario,
+#txt_modificar_fecha_devolucion,
+#txt_mostrar_libro {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+/* txt_error_modificar_fecha_devolucion */
+#txt_error_modificar_fecha_devolucion {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+/* QUITAR MARGENES ÚLTIMOS ELEMENTOS */
+#mostrar_libro {
+    margin: 0px;
+}
+
+#tabla_libro {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
